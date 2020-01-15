@@ -1,15 +1,15 @@
 
 
-#JADE PROJECT
-#Multi-agent meeting scheduling
+# JADE PROJECT
+# Multi-agent meeting scheduling
  
 
-#Project overview
+# Project overview
 The problem concerns planning a meeting among several participants. We know from experience that setting up a meeting with more than 3-4 independent participants can be a tough job. This can be viewed as a constraint satisfaction problem, where each participant has time constraints resulting from their calendar and preferences. There are numerous approaches to coping with this question. The problem is decentralized in nature, usually there is no arbitrary party that can facilitate and manipulate the process of negotiation. This can be tackled by a multi-agent system.
 
  
 
-#Definition of the problem
+# Definition of the problem
 There are N agents among whom a meeting is to be set up. Each agent has:
 
 contact list for participants selection (the contact list is a subset of the set of all agents on the platform which can be invited),
@@ -24,10 +24,10 @@ not eliminate any invited agent from the process unless the agent expresses it e
 take into account that the situation may change during the process of scheduling (the slot under consideration may be taken by another process or the preferences may change).
  
 
-#Project objective
+# Project objective
 The goal is to design and implement a protocol for meeting scheduling that would satisfy 1-4. The protocol may take several steps to complete, each agent may send more than one proposal at once - it is all up to you. The intention is to imitate a natural process of meeting scheduling in a decentralized fashion. Running your agents on different machines (PCs, smartphones or any other Java-enabled device) will be a plus.
 
-#Follow the guidelines:
+# Follow the guidelines:
 identify agent types,
 identify agent responsibilities,
 set the naming scheme,
