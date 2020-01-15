@@ -11,13 +11,17 @@ The problem concerns planning a meeting among several participants. We know from
 
 # Definition of the problem
 
-There are N agents among whom a meeting is to be set up. Each agent has:
+1. There are N agents among whom a meeting is to be set up. Each agent has:
 
-contact list for participants selection (the contact list is a subset of the set of all agents on the platform which can be invited),
-its calendar (CAL) of a certain size which is a set consisting of time slots when meetings could be scheduled, assume that CAL is finite (=> bounded and enumerable), slot starts at full time and lasts for the multiplicity of 1 hour,
-preferences expressed by a function f: CAL -> [0,1], the higher the value of f, the more preferred the slot is for a meeting for the particular agent,
-(may have) some meetings already planned which means that some slots are unavailable (we define a meeting as an unavailable slot), we assume that meetings planned cannot be cancelled (agent in the process of scheduling a new meeting cannot cancel or reschedule other meetings to retrieve a time slot),
-Agent's calendar is a private space, held by the agent and not known to the other agents. Agents share only the information passed during the negotiation process which is necessary to set up a meeting.
+- contact list for participants selection (the contact list is a subset of the set of all agents on the platform which can be invited).
+
+- its calendar (CAL) of a certain size which is a set consisting of time slots when meetings could be scheduled, assume that CAL is finite (=> bounded and enumerable), slot starts at full time and lasts for the multiplicity of 1 hour.
+
+- preferences expressed by a function f: CAL -> [0,1], the higher the value of f, the more preferred the slot is for a meeting for the particular agent.
+
+- (may have) some meetings already planned which means that some slots are unavailable (we define a meeting as an unavailable slot), we assume that meetings planned cannot be cancelled (agent in the process of scheduling a new meeting cannot cancel or reschedule other meetings to retrieve a time slot),
+
+2. Agent's calendar is a private space, held by the agent and not known to the other agents. Agents share only the information passed during the negotiation process which is necessary to set up a meeting.
 
 Basically, an agent reveals to the others only the information that the agent wants to reveal, using standard ACL message passing. There is no shared space for computation nor special agents facilitating the process who would not be the intended participants of the meeting.
 
