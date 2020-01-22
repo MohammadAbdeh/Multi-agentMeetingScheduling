@@ -20,7 +20,7 @@
   <target name="run" description="create agents" >
     <java fork="true" classpath="jade/lib/jade.jar;build" classname="jade.Boot">
       <arg value="-gui" />
-      <arg value="agent1:Multi-agentScheduling.MeetingAgent(10000);" />
+      <arg value="agent1:MeetingSchedule.MeetingAgent(1);agent2:MeetingSchedule.MeetingAgent(2);agent3:MeetingSchedule.MeetingAgent(3);agent4:MeetingSchedule.MeetingAgent(4);" />
     </java>
   </target>
 </project>
